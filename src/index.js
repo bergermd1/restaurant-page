@@ -1,14 +1,21 @@
 import './style.css';
-import {getWelcome} from './welcome.js';
+import {getBackgroundDiv, getWelcome} from './welcome.js';
 import {getHeaders} from './headers.js';
+import {getMenuDiv} from './menu.js';
+import {getContactDiv} from './contact.js';
 // import background from './background.jpg';
 
 
 window.onload = () => {
     document.querySelector('#content').appendChild(getHeaders()[0]);
     document.querySelector('#content').appendChild(getHeaders()[1]);
-    console.log(getWelcome());
     document.querySelector('#content').appendChild(getWelcome());
+    // document.querySelector('#content').appendChild(getMenuDiv());
+    // document.querySelector('#content').appendChild(getContactDiv());
+    
+    
+    
+    
     // const myBackground = new Image();
     // myBackground.src = background;
     // document.querySelector('#content').appendChild(myBackground);
