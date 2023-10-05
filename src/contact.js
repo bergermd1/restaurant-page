@@ -21,13 +21,3 @@ function getContactDiv() {
 
     return contactDiv;
 }
-
-/* <div class="contact">
-    <div class="image">
-        <img src="images/background.jpg" alt="">
-    </div>
-    <div class="container">
-        <p>Address<br>123 Fake Street<br>Nowheresville, OH</p>
-        <p>Phone number<br>(555) 555 - 5555</p>
-    </div>
-</div> */

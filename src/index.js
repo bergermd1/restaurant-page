@@ -15,27 +15,18 @@ window.onload = () => {
     
     document.querySelector('.nav>.nav-tab:nth-child(1)').addEventListener('click', () => {
         clearMainContentDiv();
-        clearTabFormatting();
         content.appendChild(getWelcome());
-        document.querySelector('.nav-tab:nth-child(1)').classList.add('tabSelected')
-        document.querySelector('.nav-tab:nth-child(2)').classList.add('tabNotSelected')
-        document.querySelector('.nav-tab:nth-child(3)').classList.add('tabNotSelected')
+        setSelectedTab(1);
     });
     document.querySelector('.nav>.nav-tab:nth-child(2)').addEventListener('click', () => {
         clearMainContentDiv();
-        clearTabFormatting();
         content.appendChild(getMenuDiv());
-        document.querySelector('.nav-tab:nth-child(2)').classList.add('tabSelected')
-        document.querySelector('.nav-tab:nth-child(1)').classList.add('tabNotSelected')
-        document.querySelector('.nav-tab:nth-child(3)').classList.add('tabNotSelected')
+        setSelectedTab(2);
     });
     document.querySelector('.nav>.nav-tab:nth-child(3)').addEventListener('click', () => {
         clearMainContentDiv();
-        clearTabFormatting();
         content.appendChild(getContactDiv());
-        document.querySelector('.nav-tab:nth-child(3)').classList.add('tabSelected')
-        document.querySelector('.nav-tab:nth-child(1)').classList.add('tabNotSelected')
-        document.querySelector('.nav-tab:nth-child(2)').classList.add('tabNotSelected')
+        setSelectedTab(3);
     });
 }
 
