@@ -14,6 +14,7 @@ function getMenuDiv() {
     
     const menuDiv = document.createElement('div');
     menuDiv.classList.add('menu');
+    menuDiv.classList.add('main-content');
     menuDiv.appendChild(backgroundDiv);
     menuDiv.appendChild(dishContainerDiv);
     

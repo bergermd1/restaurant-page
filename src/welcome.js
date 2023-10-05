@@ -11,6 +11,7 @@ function getWelcome() {
     
     const welcomeDiv = document.createElement('div');
     welcomeDiv.classList.add('welcome');
+    welcomeDiv.classList.add('main-content');
     welcomeDiv.appendChild(backgroundDiv);
     welcomeDiv.appendChild(containerDiv);
                     

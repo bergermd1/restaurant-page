@@ -15,6 +15,7 @@ function getContactDiv() {
 
     const contactDiv = document.createElement('div');
     contactDiv.classList.add('contact');
+    contactDiv.classList.add('main-content');
     contactDiv.appendChild(backgroundDiv);
     contactDiv.appendChild(containerDiv);
 

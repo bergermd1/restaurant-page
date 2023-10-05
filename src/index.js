@@ -3,39 +3,29 @@ import {getBackgroundDiv, getWelcome} from './welcome.js';
 import {getHeaders} from './headers.js';
 import {getMenuDiv} from './menu.js';
 import {getContactDiv} from './contact.js';
-// import background from './background.jpg';
 
 
 window.onload = () => {
-    document.querySelector('#content').appendChild(getHeaders()[0]);
-    document.querySelector('#content').appendChild(getHeaders()[1]);
-    document.querySelector('#content').appendChild(getWelcome());
-    // document.querySelector('#content').appendChild(getMenuDiv());
-    // document.querySelector('#content').appendChild(getContactDiv());
+    const content = document.querySelector('#content');
+
+    content.appendChild(getHeaders()[0]);
+    content.appendChild(getHeaders()[1]);
+    content.appendChild(getWelcome());
     
-    
-    
-    
-    // const myBackground = new Image();
-    // myBackground.src = background;
-    // document.querySelector('#content').appendChild(myBackground);
-    
-    
-    // const element = document.createElement('div');
-    // element.classList.add('hello');
+    document.querySelector('.nav>.nav-tab:nth-child(1)').addEventListener('click', () => {
+        clearMainContentDiv();
+        content.appendChild(getWelcome());
+    });
+    document.querySelector('.nav>.nav-tab:nth-child(2)').addEventListener('click', () => {
+        clearMainContentDiv();
+        content.appendChild(getMenuDiv());
+    });
+    document.querySelector('.nav>.nav-tab:nth-child(3)').addEventListener('click', () => {
+        clearMainContentDiv();
+        content.appendChild(getContactDiv());
+    });
+}
 
-    // const myBackground = new Image();
-    // myBackground.src = background;
-    // element.appendChild(myBackground);
-    // document.querySelector('#content').appendChild(element)
-
-
-
-
-
-
-
-    // document.querySelector('.welcome.image img').src 
-    // document.querySelector('.welcome.container.content img')
-
+function clearMainContentDiv() {
+    document.querySelector('.main-content').remove();
 }
