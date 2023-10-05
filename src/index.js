@@ -1,28 +1,26 @@
 import './style.css';
-// import {getWelcome} from './welcome.js';
-// import {getHeaders} from './headers.js';
+import {getWelcome} from './welcome.js';
+import {getHeaders} from './headers.js';
 // import background from './background.jpg';
-import background from './background.jpg';
+
 
 window.onload = () => {
-    // document.querySelector('#content').appendChild(getHeaders()[0]);
-    // document.querySelector('#content').appendChild(getHeaders()[1]);
-    
-    // document.querySelector('#content').appendChild(getWelcome());
+    document.querySelector('#content').appendChild(getHeaders()[0]);
+    document.querySelector('#content').appendChild(getHeaders()[1]);
+    console.log(getWelcome());
+    document.querySelector('#content').appendChild(getWelcome());
     // const myBackground = new Image();
     // myBackground.src = background;
     // document.querySelector('#content').appendChild(myBackground);
     
     
-    const element = document.createElement('div');
-    element.classList.add('hello');
+    // const element = document.createElement('div');
+    // element.classList.add('hello');
 
-    const myBackground = new Image();
-    myBackground.src = background;
-    // myBackground.classList.add('asdfasdf');
-    // console.log(myBackground);
-    element.appendChild(myBackground);
-    document.querySelector('#content').appendChild(element)
+    // const myBackground = new Image();
+    // myBackground.src = background;
+    // element.appendChild(myBackground);
+    // document.querySelector('#content').appendChild(element)
 
 
 
